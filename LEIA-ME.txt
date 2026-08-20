@@ -1,0 +1,12 @@
+ARQUIVOS PARA HOSPEDAGEM — THATY NAILS
+
+Envie todo o conteúdo desta pasta para a pasta pública da hospedagem
+(normalmente chamada public_html, www ou htdocs).
+
+Estrutura:
+- html/index.html: página principal
+- css/style.css: estilos
+- js/main.js: scripts externos
+- assets/: imagens do site
+
+O index.html da raiz redireciona automaticamente para a página principal.
