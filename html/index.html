@@ -2,6 +2,24 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
+  <!-- Google Analytics 4 com Consent Mode -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-65C4WMC6WS"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-65C4WMC6WS', { send_page_view: true });
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Thaty Nails em Barretos, SP, no Studio Marcos Paro: alongamento em fibra de vidro e gel com atendimento especializado. Agende pelo WhatsApp.">
   <meta name="theme-color" content="#947c67">
@@ -10,7 +28,7 @@
   <link rel="canonical" href="https://thatynails.com.br/">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'none'; frame-src https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://analytics.google.com; frame-src https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
   <title>Thaty Nails | Alongamento em Fibra de Vidro e Gel em Barretos</title>
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
@@ -73,6 +91,9 @@
     .site-header{min-height:108px;height:auto}.brand-final{width:260px;height:88px;overflow:visible;border-radius:0;display:flex;align-items:center;justify-content:center;flex:none}.brand-final img{display:block;width:100%;height:100%;max-width:none;flex:none;object-fit:contain;object-position:center;background:transparent}@media(max-width:760px){.site-header{min-height:88px}.brand-final{width:180px;height:68px}}
   </style>
 <style>.instagram-invite{margin-bottom:35px}.social-grid{max-width:1170px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.social-grid a{aspect-ratio:1;display:block;overflow:hidden;border-radius:17px;background:#ead6c6;box-shadow:0 8px 19px #7c5b491c}.social-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}.social-grid a:hover img{transform:scale(1.06)}@media(max-width:760px){.social-grid{grid-template-columns:repeat(2,1fr);gap:11px}}</style>
+  <style>
+    .cookie-consent{position:fixed;z-index:1000;left:18px;right:18px;bottom:18px;max-width:760px;margin:auto;padding:18px 20px;display:none;align-items:center;gap:18px;border:1px solid #e4cdbd;border-radius:18px;background:#fff8f3;color:#3d302a;box-shadow:0 14px 40px #3d302a35;font-size:.78rem;line-height:1.45}.cookie-consent.is-visible{display:flex}.cookie-consent p{margin:0;flex:1}.cookie-actions{display:flex;gap:9px;flex:none}.cookie-choice{min-height:44px;padding:10px 17px;border:1px solid #947c67;border-radius:999px;background:transparent;color:#765d4c;font:inherit;font-weight:700;cursor:pointer}.cookie-choice.accept{background:#947c67;color:#fff}@media(max-width:650px){.cookie-consent{align-items:stretch;flex-direction:column}.cookie-actions{display:grid;grid-template-columns:1fr 1fr}.cookie-choice{width:100%}}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -131,6 +152,44 @@
     const whatsappIcon = '<svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16.01 3.2a12.63 12.63 0 0 0-10.9 19L3.2 28.8l6.78-1.77A12.7 12.7 0 1 0 16.01 3.2Zm0 23.1c-1.82 0-3.6-.5-5.15-1.45l-.37-.22-4.02 1.05 1.07-3.91-.24-.4a10.58 10.58 0 1 1 8.71 4.93Zm5.8-7.92c-.32-.16-1.89-.94-2.18-1.04-.3-.11-.51-.16-.72.16-.21.31-.83 1.03-1.02 1.23-.19.21-.38.23-.7.08-1.9-.95-3.15-1.7-4.4-3.86-.33-.57.33-.53.95-1.76.1-.21.05-.39-.03-.55-.08-.16-.72-1.73-.99-2.37-.26-.62-.54-.54-.72-.55h-.61c-.22 0-.56.08-.85.39-.3.31-1.12 1.09-1.12 2.65s1.15 3.08 1.31 3.29c.16.21 2.26 3.45 5.47 4.84.76.33 1.36.53 1.82.67.77.25 1.47.21 2.02.13.62-.09 1.89-.78 2.15-1.53.27-.76.27-1.41.19-1.54-.08-.13-.29-.21-.61-.37Z"/></svg>';
     document.querySelectorAll('a[href*="wa.me"]').forEach(button => { button.innerHTML = whatsappIcon + '<span>Agendar pelo WhatsApp</span>'; });
     document.querySelector('footer').insertAdjacentHTML('beforeend', '<a class="instagram" href="https://www.instagram.com/thatynailsoficial?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" aria-label="Acesse o Instagram da Thaty Nails" title="Instagram da Thaty Nails"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="instagram-dot" cx="17.35" cy="6.65" r="1"></circle></svg><span>@thatynailsoficial</span></a>');
+  </script>
+  <aside class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Preferências de privacidade" aria-live="polite">
+    <p>Usamos dados de navegação para entender o desempenho do site e melhorar o atendimento. Você pode aceitar ou recusar a medição.</p>
+    <div class="cookie-actions"><button class="cookie-choice" id="cookie-reject" type="button">Recusar</button><button class="cookie-choice accept" id="cookie-accept" type="button">Aceitar</button></div>
+  </aside>
+  <script>
+    (() => {
+      const key = 'thaty_analytics_consent';
+      const banner = document.getElementById('cookie-consent');
+      const applyConsent = (granted) => {
+        gtag('consent', 'update', {
+          analytics_storage: granted ? 'granted' : 'denied',
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        });
+        localStorage.setItem(key, granted ? 'granted' : 'denied');
+        banner.classList.remove('is-visible');
+      };
+      const saved = localStorage.getItem(key);
+      if (saved === 'granted') {
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+      } else if (saved !== 'denied') {
+        banner.classList.add('is-visible');
+      }
+      document.getElementById('cookie-accept').addEventListener('click', () => applyConsent(true));
+      document.getElementById('cookie-reject').addEventListener('click', () => applyConsent(false));
+      document.addEventListener('click', (event) => {
+        const link = event.target.closest('a[href]');
+        if (!link) return;
+        const href = link.href;
+        let eventName = '';
+        if (href.includes('wa.me')) eventName = 'click_whatsapp';
+        else if (href.includes('instagram.com')) eventName = 'click_instagram';
+        else if (href.includes('google.com/maps')) eventName = 'click_como_chegar';
+        if (eventName) gtag('event', eventName, { link_url: href, link_text: link.textContent.trim() });
+      });
+    })();
   </script>
 </body>
 </html>
