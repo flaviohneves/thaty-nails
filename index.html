@@ -18,6 +18,7 @@
   <script>
     gtag('js', new Date());
     gtag('config', 'G-65C4WMC6WS', { send_page_view: true });
+    gtag('config', 'AW-399767123');
   </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -188,6 +189,13 @@
         else if (href.includes('instagram.com')) eventName = 'click_instagram';
         else if (href.includes('google.com/maps')) eventName = 'click_como_chegar';
         if (eventName) gtag('event', eventName, { link_url: href, link_text: link.textContent.trim() });
+        if (href.includes('wa.me')) {
+          gtag('event', 'conversion', {
+            send_to: 'AW-399767123/zC8NCJf42-YcENPsz74B',
+            event_callback: () => {},
+            event_timeout: 2000
+          });
+        }
       });
     })();
   </script>
